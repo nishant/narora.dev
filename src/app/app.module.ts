@@ -7,8 +7,7 @@ import {ProjectsModule} from './modules/projects/projects.module';
 import {AboutModule} from './modules/about/about.module';
 import {ResumeModule} from './modules/resume/resume.module';
 import {HomeModule} from './modules/home/home.module';
-import {HomeComponent} from './modules/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import {ComponentsModule} from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomeModule,
     AboutModule,
     ResumeModule,
-    ProjectsModule
+    ProjectsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
