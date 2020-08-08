@@ -1,0 +1,72 @@
+
+.social-container {
+  height: 40px;
+  width: 40px;
+  display: flex;
+}
+.social{
+  list-style: none;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.social>li{
+  float: left;
+}
+
+.social a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 50px;
+  padding-bottom: 40px;
+  background: #454444;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.social .link.linkedin{
+  border-radius: 0px 20px 20px 0px;
+}
+
+.social .link.twitter{
+  border-radius: 20px 0px 0px 20px;
+}
+
+.fa {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.social .link{
+  font-size: 45px;
+  transition: 1s;
+}
+
+.social .link:hover{
+  transition: 1s;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social .link.twitter:hover{
+  background: #1da1f2;
+}
+
+.social .link.linkedin:hover{
+  background: #0077b5;
+}
+
+.social .link.codepen:hover{
+  background: #47cf73;
+}
+
+.social .link.github:hover{
+  background: #333;
+}
+
+.social .link.dribbble:hover{
+  background: #ea4c89;
+}
+
+.social .link.stack-overflow:hover{
+  background: #f48024;
+}
