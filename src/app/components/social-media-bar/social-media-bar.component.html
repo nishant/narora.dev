@@ -1,0 +1,10 @@
+<div class="social-container">
+  <ul class="social">
+    <li *ngFor="let item of items | keyvalue">
+      <a href="{{item.value.url}}" class="link" target="_blank" [ngStyle]="{'background': item.value.background}">
+        <span class="fa {{item.value.icon}}"></span>
+      </a>
+    </li>
+  </ul>
+</div>
+
