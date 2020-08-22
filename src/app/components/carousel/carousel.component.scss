@@ -1,0 +1,24 @@
+.carousel-container {
+  width: 600px;
+
+  @media (min-width: 320px) and (max-width: 450px) {
+    width: 300px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  margin: 0 auto;
+}
+
+.carousel-item-content {
+  padding: 50px 100px;
+}
+
+.carousel-item-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
