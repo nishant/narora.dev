@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CarouselItem} from '../../typings/carousel-item';
-import { projectsData } from '../../modules/projects/static.products.data';
+import { projectsData } from '../../modules/projects/products.static.data';
 
 @Component({
   selector: 'app-carousel',

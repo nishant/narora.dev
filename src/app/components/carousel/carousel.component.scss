@@ -1,24 +1,59 @@
 .carousel-container {
   width: 600px;
+  margin: 0 auto;
 
-  @media (min-width: 320px) and (max-width: 450px) {
-    width: 300px;
+  @media (max-width: 650px) {
+    width: 100%;
   }
 
-  img {
+  .carousel-item-icon {
     height: 50px;
     width: 50px;
   }
 
-  margin: 0 auto;
+  .github-link {
+    padding-right: 5px;
+  }
+
+  .carousel-nav-button {
+    width: 10%;
+  }
 }
 
 .carousel-item-content {
-  padding: 50px 100px;
+  margin: 35px 75px;
+  padding-bottom: 25px;
+  min-height: 225px;
+  max-height: 225px;
+
+  >.carousel-item-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .built-with-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      >.technology-used {
+        padding-top: 8px;
+      }
+    }
+  }
+
+  >.carousel-item-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+    .carousel-item-description {
+      width: 65%;
+    }
+  }
 }
 
-.carousel-item-title-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
+
+

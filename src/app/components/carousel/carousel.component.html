@@ -1,7 +1,7 @@
 <div class="carousel-container">
-  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li *ngFor="let item of items; let index = index"
+      <li *ngFor="let _ of items; let index = index"
         data-target="#carouselIndicatores"
         attr.data-slide-to="{{index}}"
         [class.active]="index == 0">
@@ -16,20 +16,26 @@
           <div class="carousel-item-content">
             <div class="carousel-item-title-wrapper">
               <h2>{{item.title}}</h2>
-              <img src="../../../assets/{{item.icon}}" class="d-block" alt="alt">
+              <div class="built-with-container">
+                <img src="../../../assets/{{item.icon}}" class="d-block carousel-item-icon" alt="alt">
+                <p class="technology-used">Built with {{item.technology}}</p>
+              </div>
             </div>
-            <p>{{item.description}}</p>
-            <a [href]="item.url">View Source</a>
+
+            <div class="carousel-item-details-wrapper">
+              <p class="carousel-item-description">{{item.description}}</p>
+              <a [href]="item.url"><span class="fa fa-github github-link"></span>View Source</a>
+            </div>
           </div>
         </div>
     </div>
 
-    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev carousel-nav-button" href="#carouselIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
 
-    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next carousel-nav-button" href="#carouselIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>

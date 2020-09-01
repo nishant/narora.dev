@@ -4,5 +4,6 @@ export interface CarouselItem {
   description: string;
   url: string;
   background: string;
+  technology: string;
 }
 
