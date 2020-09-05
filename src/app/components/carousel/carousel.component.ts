@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CarouselItem} from '../../typings/carousel-item';
+import { CarouselItem } from '../../typings/carousel-item';
 import { projectsData } from '../../modules/projects/products.static.data';
 
 @Component({
@@ -15,5 +15,4 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
     this.items = projectsData.CarouselItems;
   }
-
 }
