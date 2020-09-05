@@ -54,8 +54,10 @@
 
 
   @media (min-width: 360px) and (max-width: 550px) {
-    margin: 16px 32px;
-    height: 275px;
+    & {
+      margin: 16px 32px;
+      height: 275px;
+    }
 
     >.carousel-item-title-wrapper {
       flex-direction: column;
