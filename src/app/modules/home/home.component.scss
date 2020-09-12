@@ -1,0 +1,90 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  overflow: hidden;
+  background: #3a0ca3;
+  margin-top: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 4rem;
+  line-height: 1em;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: 2400px) {
+    font-size: 7rem;
+  }
+}
+
+.home-nav {
+  display: flex;
+  font-size: 2.5rem;
+  line-height: 1em;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+
+  a {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #4cc9f0;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transition: color .35s ease;
+    padding-bottom: 20px;
+
+    &:before {
+      content: '';
+      display:block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0s ease, background .35s ease;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background: #f72585;
+      transition: width .35s ease;
+    }
+    &:hover:before {
+      width: 100%;
+      background: #f72585;
+      transition: width .35s ease;
+    }
+    &:hover:after {
+      width: 100%;
+      background: transparent;
+      transition: all 0s ease;
+    }
+
+    @media (max-width: 767px) {
+      &:before, &:after, &:hover:before, &:hover:after {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 2400px) {
+    font-size: 7rem;
+  }
+}
